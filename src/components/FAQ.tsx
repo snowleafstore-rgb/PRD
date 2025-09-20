@@ -101,7 +101,7 @@ export default function FAQ() {
 
         {/* FAQ Items */}
         <div className="space-y-4">
-          {filteredFAQs.map((item, index) => {
+          {filteredFAQs.map((item) => {
             const globalIndex = faqData.indexOf(item)
             const isOpen = openItems.has(globalIndex)
             
@@ -145,7 +145,7 @@ export default function FAQ() {
           <div className="bg-gray-900 text-white rounded-2xl p-8">
             <h3 className="text-2xl font-light mb-4">Still Have Questions?</h3>
             <p className="text-lg text-gray-300 mb-6">
-              Can't find what you're looking for? We're here to help!
+              Can&apos;t find what you&apos;re looking for? We&apos;re here to help!
             </p>
             <div className="flex justify-center">
               <a 

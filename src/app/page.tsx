@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import WaitlistForm from "@/components/WaitlistForm";
 import FAQ from "@/components/FAQ";
 
@@ -132,7 +133,7 @@ export default function Home() {
       {/* Breadcrumb Navigation */}
       <nav aria-label="Breadcrumb" className="hidden">
         <ol className="flex items-center space-x-2 text-sm text-gray-500">
-          <li><a href="/" className="hover:text-green-600">Home</a></li>
+          <li><Link href="/" className="hover:text-green-600">Home</Link></li>
           <li>/</li>
           <li aria-current="page">Organic Wellness Products</li>
         </ol>
@@ -214,7 +215,7 @@ export default function Home() {
           
           {/* Journey subheading */}
           <p className="text-xl md:text-2xl font-light mb-10 max-w-3xl mx-auto leading-relaxed">
-            We're launching with our signature organic oatmeal soap, the first step in building 
+            We&apos;re launching with our signature organic oatmeal soap, the first step in building 
             the complete organic home experience. More products coming soon.
           </p>
         </div>
@@ -234,7 +235,7 @@ export default function Home() {
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Our first product is now available! Gentle, nourishing cleansing with zero synthetic chemicals. 
-              Made from 100% organic ingredients for your family's wellness.
+              Made from 100% organic ingredients for your family&apos;s wellness.
             </p>
           </div>
           
@@ -320,7 +321,7 @@ export default function Home() {
               Why Choose Organic
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Your skin absorbs what you put on it. Choose organic for your family's health and wellness.
+              Your skin absorbs what you put on it. Choose organic for your family&apos;s health and wellness.
             </p>
           </div>
           
@@ -418,7 +419,7 @@ export default function Home() {
               Coming Soon
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We're working on expanding our organic wellness system with these essential products for your home.
+              We&apos;re working on expanding our organic wellness system with these essential products for your home.
             </p>
           </div>
           
