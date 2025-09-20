@@ -1,4 +1,5 @@
 import Image from "next/image";
+import WaitlistForm from "@/components/WaitlistForm";
 
 export default function Home() {
   return (
@@ -428,32 +429,7 @@ export default function Home() {
               Be the first to know when these products launch. Get exclusive early access 
               and special pricing for our founding members.
             </p>
-            <div className="max-w-lg mx-auto">
-              <div className="flex flex-col sm:flex-row gap-4 mb-6">
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  className="flex-1 px-6 py-4 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white text-lg"
-                />
-                <button className="bg-white text-gray-900 px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-colors text-lg">
-                  Join Waitlist
-                </button>
-              </div>
-              <div className="flex items-center justify-center space-x-6 text-sm text-gray-400">
-                <div className="flex items-center">
-                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
-                  No spam, ever
-                </div>
-                <div className="flex items-center">
-                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
-                  Unsubscribe anytime
-                </div>
-                <div className="flex items-center">
-                  <span className="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
-                  Early access pricing
-                </div>
-              </div>
-            </div>
+            <WaitlistForm />
           </div>
         </div>
       </section>
