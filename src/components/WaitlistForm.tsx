@@ -6,7 +6,7 @@ import { useWaitlist } from '@/hooks/useWaitlist'
 export default function WaitlistForm() {
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
-  const { submitToWaitlist, isLoading, message, isSuccess, isError, reset } = useWaitlist()
+  const { submitToWaitlist, isLoading, message, isSuccess, isError } = useWaitlist()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()

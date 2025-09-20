@@ -7,7 +7,7 @@ interface WaitlistFormData {
 
 interface WaitlistResponse {
   message: string
-  user?: any
+  user?: Record<string, unknown>
   error?: string
 }
 

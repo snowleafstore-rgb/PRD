@@ -92,7 +92,7 @@ export default function Home() {
             Pure Organic Wellness for Your Home
           </h1>
           <p className="text-xl md:text-2xl font-light opacity-90 max-w-4xl mx-auto mb-12 leading-relaxed">
-            "Begin your journey to natural living with our signature organic oatmeal soap—crafted to nourish your skin, protect your family, and bring complete organic wellness into every corner of your home."
+            &ldquo;Begin your journey to natural living with our signature organic oatmeal soap—crafted to nourish your skin, protect your family, and bring complete organic wellness into every corner of your home.&rdquo;
           </p>
           <button className="bg-amber-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-amber-700 transition-colors text-lg">
             Shop Now

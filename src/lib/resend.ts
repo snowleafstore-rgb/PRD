@@ -2,7 +2,7 @@ import { Resend } from 'resend'
 
 const resend = new Resend(process.env.RESEND_API_KEY)
 
-export const sendWaitlistConfirmation = async (email: string, name?: string) => {
+export const sendWaitlistConfirmation = async (email: string) => {
   try {
     const { data, error } = await resend.emails.send({
       from: process.env.FROM_EMAIL || 'Snow Leaf Store <onboarding@resend.dev>',

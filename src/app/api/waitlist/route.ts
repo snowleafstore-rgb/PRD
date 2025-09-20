@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
     if (!supabaseAdmin) {
       // If Supabase not configured, just send email and return success
       try {
-        await sendWaitlistConfirmation(email, name)
+        await sendWaitlistConfirmation(email)
         return NextResponse.json(
           { 
             message: 'Successfully joined waitlist! (Email sent, database not configured yet)',
@@ -81,7 +81,7 @@ export async function POST(request: NextRequest) {
 
     // Send confirmation email
     try {
-      await sendWaitlistConfirmation(email, name)
+      await sendWaitlistConfirmation(email)
     } catch (emailError) {
       console.error('Error sending email:', emailError)
       // Don't fail the request if email fails, just log it
