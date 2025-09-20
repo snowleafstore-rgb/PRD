@@ -11,7 +11,6 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,15 +26,29 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Text shadow utilities for better readability */
-.text-shadow-sm {
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+/* Simple hero section styling */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
 }
 
-.text-shadow-md {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-.text-shadow-lg {
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Clean button hover effects */
