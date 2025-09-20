@@ -5,7 +5,7 @@ const resend = new Resend(process.env.RESEND_API_KEY)
 export const sendWaitlistConfirmation = async (email: string, name?: string) => {
   try {
     const { data, error } = await resend.emails.send({
-      from: process.env.FROM_EMAIL || 'Snow Leaf Store <noreply@snowleafstore.com>',
+      from: process.env.FROM_EMAIL || 'Snow Leaf Store <onboarding@resend.dev>',
       to: [email],
       subject: 'Welcome to Snow Leaf Store Waitlist! 🌿',
       html: `
