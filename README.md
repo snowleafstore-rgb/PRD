@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Snow Leaf Landing Page
+
+A beautiful, minimal landing page for Snow Leaf - a brand focused on bringing simplicity, elegance, and comfort to your home.
+
+## Features
+
+- **Hero Section**: Compelling headline "Turn Everyday Moments into Quiet Luxury"
+- **Product Highlight**: Showcases soap dispensers with "Functional Beauty for Every Day"
+- **Brand Story**: Tells the story "Born from Nature, Inspired by Home"
+- **Future Vision**: Teases upcoming products "This is Just the Beginning"
+- **Newsletter Signup**: Early access signup with "Be the First to Experience Snow Leaf"
+- **Minimal Footer**: Clean navigation and brand tagline "Small Details, Big Comfort"
+
+## Design Philosophy
+
+- **Quiet Luxury**: Clean, minimal aesthetic with subtle typography
+- **Natural Colors**: Soft neutrals and muted tones
+- **Responsive Design**: Fully responsive across all devices
+- **Modern Typography**: Clean, readable fonts with proper spacing
+- **Subtle Interactions**: Smooth hover effects and transitions
+
+## Technology Stack
+
+- **Next.js 15**: React framework with App Router
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first styling
+- **Modern CSS**: Custom properties and smooth animations
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css    # Global styles and CSS variables
+│   ├── layout.tsx     # Root layout
+│   └── page.tsx       # Main landing page
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Customization
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The landing page uses CSS custom properties for easy theming:
+- `--background`: Main background color
+- `--foreground`: Primary text color
+- `--muted`: Secondary background color
+- `--muted-foreground`: Secondary text color
+- `--border`: Border colors
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+The project is ready for deployment on Vercel, Netlify, or any platform that supports Next.js.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm start
+```
