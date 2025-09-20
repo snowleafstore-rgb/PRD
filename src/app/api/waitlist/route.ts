@@ -14,6 +14,32 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Check if Supabase is configured
+    const isSupabaseConfigured = process.env.NEXT_PUBLIC_SUPABASE_URL && 
+      process.env.NEXT_PUBLIC_SUPABASE_URL !== 'your_supabase_project_url' &&
+      process.env.SUPABASE_SERVICE_ROLE_KEY &&
+      process.env.SUPABASE_SERVICE_ROLE_KEY !== 'your_supabase_service_role_key'
+
+    if (!isSupabaseConfigured) {
+      // If Supabase not configured, just send email and return success
+      try {
+        await sendWaitlistConfirmation(email, name)
+        return NextResponse.json(
+          { 
+            message: 'Successfully joined waitlist! (Email sent, database not configured yet)',
+            user: { email, name }
+          },
+          { status: 201 }
+        )
+      } catch (emailError) {
+        console.error('Error sending email:', emailError)
+        return NextResponse.json(
+          { error: 'Email service not configured. Please contact support.' },
+          { status: 500 }
+        )
+      }
+    }
+
     // Check if email already exists
     const { data: existingUser, error: checkError } = await supabaseAdmin
       .from('waitlist')
